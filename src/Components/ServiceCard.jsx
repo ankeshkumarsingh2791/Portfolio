@@ -46,7 +46,7 @@ const ServiceCard = ({ type, para,image}) => {
         </motion.div>
         
       <motion.div 
-      className='w-full flex flex-col items-center justify-center'>
+      className='w-full sm:flex sm:flex-col items-center justify-center'>
       <h3 className=" sm:text-lg font-bold text-sm  " >{type}</h3>
 
     <p className="sm:text-sm text-xs px-2  mt-5 ">{para}</p>

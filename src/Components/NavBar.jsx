@@ -3,14 +3,24 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
-    <div className='w-full h-16 flex fixed opacity-95 py-2.5 justify-between ring-2 text-white z-50 bg-[#17304B]'>
-        <div className=''>
+    <div className='w-full px-4 sm:px-32 sm:h-16  flex fixed opacity-95 py-2.5 justify-between ring-2 text-white z-50 bg-[#17304B]'>
+        <div className='sm:block hidden'>
       Logo
         </div>
-        <div className=' flex gap-16 '>
-           <h3>About</h3>
-           <h3>Project</h3>
-           <h3>Contact</h3>
+        <div className='  flex gap-4 text-sm sm:text-lg sm:gap-16 '>
+          <Link to={"/home"}>
+          Home
+          </Link>
+          <Link to={"/about"}>
+           About
+          </Link>
+          <Link to={"/projects"}>
+          Projects
+          
+          </Link>
+           <Link to={"/contact"}>
+           Contact
+           </Link>
            <Link to={"/resume"}>
             Resume
            </Link>

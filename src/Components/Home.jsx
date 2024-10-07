@@ -3,6 +3,13 @@ import React from 'react'
 import { delay, motion } from "framer-motion"
 import NavBar from './NavBar'
 import ServicePage from '../Pages/ServicePage'
+
+import Project from './Project'
+import Contact from './Contact'
+
+import Footer from './Footer'
+import BioData from './BioData'
+import Testinomial from './Testinomial'
 const Home = () => {
   return (
     <>
@@ -11,7 +18,7 @@ const Home = () => {
          
          <motion.div 
          
-         className="w-full h-screen text-white  md:h-screen md:justify-center md:items-center  md:flex">
+         className="w-full   text-white py-12 sm:py-0  h-screen md:justify-center md:items-center  md:flex">
           <div className="sm:w-1/2 sm:px-8 justify-center text-center sm:text-start flex flex-col gap-4 ">
             <motion.h3
             animate={{x: [0, 100, 0, 100], y:[-50,0]  } }
@@ -19,7 +26,7 @@ const Home = () => {
             
             
            
-             className="sm:text-4xl md:mt-5 text-xl font-semibold">
+             className="sm:text-4xl md:mt-5 mt-20  text-xl font-semibold">
              Hii !!, I am Ankesh 
             </motion.h3
             >
@@ -60,7 +67,15 @@ const Home = () => {
       
 
     </Container>
+    <BioData />
     <ServicePage />
+    <Project />
+   
+    <Testinomial />
+
+    <Contact />
+   
+    <Footer />
     </>
   )
 }
