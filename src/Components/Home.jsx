@@ -18,19 +18,19 @@ const Home = () => {
          
          <motion.div 
          
-         className="w-full   text-white py-12 sm:py-0  h-screen md:justify-center md:items-center  md:flex">
-          <div className="sm:w-1/2 sm:px-8 justify-center text-center sm:text-start flex flex-col gap-4 ">
+         className="w-full   text-white py-1 sm:py-12 sm:mt-10   md:justify-center md:items-center  md:flex">
+          <div className="sm:w-1/2 sm:px-8 sm:justify-center  sm:text-start flex flex-col gap-4 ">
             <motion.h3
             animate={{x: [0, 100, 0, 100], y:[-50,0]  } }
             transition={{duration: 3, delay:1,}}
             
             
            
-             className="sm:text-4xl md:mt-5 mt-20  text-xl font-semibold">
+             className="sm:text-4xl md:mt-5 mt-20   text-xl font-semibold">
              Hii !!, I am Ankesh 
             </motion.h3
             >
-            <p className="sm:text-xl  text-sm font-sans  sm:leading-8">
+            <p className="sm:text-xl text-center  text-sm font-sans  sm:leading-8">
             Welcome to my portfolio! I'm a MERN stack developer passionate about crafting engaging and user-friendly web experiences. With a keen eye for design and a strong foundation in coding, I specialize in bringing dynamic interfaces to life. From concept to deployment, I thrive on turning ideas into intuitive, visually stunning websites that resonate with users. Let's collaborate to build digital solutions that not only meet but exceed expectations.
             </p>
           </div>
@@ -42,7 +42,11 @@ const Home = () => {
 
           
           <motion.div  
-          animate={{
+          
+          className=' rounded-xl bg-slate-400 border-black  '>
+
+          <motion.img 
+           animate={{
             scale:[1,1,1,1],
             rotate: [0,360,360,0],
             borderRadius:["10%","10%","50%","10%"]
@@ -57,9 +61,7 @@ const Home = () => {
             
             
           }}
-          className=' rounded-sm bg-slate-400 border-black  '>
-
-          <img className='w-64 p-10 rounded-md' src='Profile.jpg' alt='' />
+          className='w-64 p-10 rounded-md' src='Profile.jpg' alt='' />
           </motion.div>
             
           </motion.div>

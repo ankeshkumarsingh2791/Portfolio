@@ -7,7 +7,7 @@ const NavBar = () => {
         <div className='sm:block hidden'>
       Logo
         </div>
-        <div className='  flex gap-4 text-sm sm:text-lg sm:gap-16 '>
+        <div className=' justify-center ml-8 sm:ml-0 flex gap-4 text-sm sm:text-lg sm:gap-16 '>
           <Link to={"/home"}>
           Home
           </Link>

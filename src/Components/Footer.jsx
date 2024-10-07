@@ -163,7 +163,7 @@ const Footer = () => {
 
             <a href='mailto: ankeshkumarsingh2791@gmail.com text-xs' >
 
-                ✉ ankeshkumarsingh2791@gmail.com 
+                 ankeshkumarsingh2791@gmail.com 
                 </a>
                 
         
