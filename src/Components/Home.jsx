@@ -57,9 +57,9 @@ const Home = () => {
             
             
           }}
-          className=' bg-rose-50 border-black  '>
+          className=' rounded-sm bg-slate-400 border-black  '>
 
-          <img className='w-60 p-10' src='Ankesh-1.png' alt='' />
+          <img className='w-64 p-10 rounded-md' src='Profile.jpg' alt='' />
           </motion.div>
             
           </motion.div>
