@@ -22,7 +22,7 @@ const Home = () => {
           <div className="sm:w-1/2 sm:px-8 justify-center text-center sm:text-start flex flex-col gap-4 ">
             <motion.h3
             animate={{x: [0, 100, 0, 100], y:[-50,0]  } }
-            transition={{duration: 3, delay:1, repeat:Infinity}}
+            transition={{duration: 3, delay:1,}}
             
             
            
@@ -51,7 +51,7 @@ const Home = () => {
           transition={{
             duration:5
             , ease: "easeInOut",
-            repeat:Infinity,
+            // repeat:Infinity,
             repeatDelay:1,
             
             

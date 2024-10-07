@@ -25,7 +25,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://www.instagram.com/a_n_k_e_s_h_"
+              href="https://www.instagram.com/a_n_k_e_s_h______p_a_t_e_l_/"
               rel="noreferrer"
               target="_blank"
               className=" transition hover:opacity-75"
@@ -158,9 +158,15 @@ const Footer = () => {
               <a href="#" className=" transition hover:opacity-75"> 📞 +91 6205725286 </a>
             </li>
 
-            <li className='flex '>
+            <li className='text-sm'>
+                
+
+            <a href='mailto: ankeshkumarsingh2791@gmail.com text-xs' >
+
+                ✉ ankeshkumarsingh2791@gmail.com 
+                </a>
+                
         
-            <i className="ri-mail-line mr-2"></i> ankeshkumarsingh2791@gmail.com 
             </li>
           </ul>
         </div>

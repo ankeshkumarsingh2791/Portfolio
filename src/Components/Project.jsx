@@ -12,7 +12,7 @@ const Project = () => {
     <NavBar></NavBar>
      <Container bgColor={"#0B1C2E"}>
 
-      <div className='w-full mt-10 sm:p-10 py-16   text-white '>
+      <div className='w-full mt-10 sm:p-10 py-16 mb-10   text-white '>
       <div className=' sm:px-36 sm:w-[70%] text-white'>
       <h3 className='text-3xl'> Recent Project Contribution </h3>
        <p>I Offer Web Development, Responsive Design, Deployment & Hosting, Custom Web Solutions,  Bug Fixing & Optimization, E-commerce Solutions</p>

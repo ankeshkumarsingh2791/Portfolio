@@ -1,7 +1,14 @@
 import React from 'react'
 import Container from './Container'
+import { useForm, ValidationError } from '@formspree/react';
+
+
 
 const Contact = () => {
+    const [state, handleSubmit] = useForm("mjkvbeeo");
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
   return (
     <>
     <Container bgColor={"#0B1C2E"}>
@@ -27,7 +34,7 @@ const Contact = () => {
       </div>
 
       <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
-        <form action="#" className="space-y-4">
+        <form  action="https://formspree.io/f/mjkvbeeo"  method="POST" onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="sr-only" htmlFor="name">Name</label>
             <input
@@ -36,6 +43,7 @@ const Contact = () => {
               type="text"
               id="name"
             />
+             
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -47,6 +55,11 @@ const Contact = () => {
                 type="email"
                 id="email"
               />
+               <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
             </div>
 
             <div>
@@ -70,11 +83,16 @@ const Contact = () => {
               rows="8"
               id="message"
             ></textarea>
+            <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
           </div>
 
           <div className="mt-4">
             <button
-              type="submit"
+             disabled={state.submitting}
               className="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
             >
               Send Enquiry
