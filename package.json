@@ -12,11 +12,14 @@
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "antd": "^5.21.2",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.11.1",
+    "motion": "^12.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.26.2",
-    "remixicon": "^4.3.0"
+    "remixicon": "^4.3.0",
+    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
