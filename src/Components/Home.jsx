@@ -7,65 +7,66 @@ import ServicePage from '../Pages/ServicePage'
 import Project from './Project'
 import Contact from './Contact'
 
-import Footer from './Footer'
 import BioData from './BioData'
 import Testinomial from './Testinomial'
 const Home = () => {
   return (
     <>
-    <NavBar />
+ 
     <Container bgColor={"#0B1C2E"}>
-         
-         <motion.div 
-         
-         className="w-full   text-white py-1 sm:py-12 sm:mt-10   md:justify-center md:items-center  md:flex">
-          <div className="sm:w-1/2 sm:px-8 sm:justify-center  sm:text-start flex flex-col gap-4 ">
-            <motion.h3
-            animate={{x: [0, 100, 0, 100], y:[-50,0]  } }
-            transition={{duration: 3, delay:1,}}
-            
-            
-           
-             className="sm:text-4xl md:mt-5 mt-20   text-xl font-semibold">
-             Hii !!, I am Ankesh 
-            </motion.h3
-            >
-            <p className="sm:text-xl text-center  text-sm font-sans  sm:leading-8">
-            Welcome to my portfolio! I'm a MERN stack developer passionate about crafting engaging and user-friendly web experiences. With a keen eye for design and a strong foundation in coding, I specialize in bringing dynamic interfaces to life. From concept to deployment, I thrive on turning ideas into intuitive, visually stunning websites that resonate with users. Let's collaborate to build digital solutions that not only meet but exceed expectations.
-            </p>
-          </div>
 
-          <motion.div
-          
-          className="sm:w-1/2 p-10  flex justify-center  ">
-          {/* <img className='w-60 p-10' src='Ankesh-1.png' alt='' /> */}
 
-          
-          <motion.div  
-          
-          className=' rounded-xl bg-slate-400 border-black  '>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="w-full bg-gradient-to-b from-[#102236] via-[#17304B] to-[#102236] text-white py-10 sm:py-24 px-4 sm:px-10 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between gap-0"
+    >
+      {/* Left Content */}
+      <div className="md:w-1/2 text-center md:text-left space-y-6">
+        <motion.h3
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+          className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
+        >
+          Hi 👋, I’m <span className="text-cyan-400">Ankesh</span>
+        </motion.h3>
 
-          <motion.img 
-           animate={{
-            scale:[1,1,1,1],
-            rotate: [0,360,360,0],
-            borderRadius:["10%","10%","50%","10%"]
+        <p className="text-sm sm:text-lg md:text-xl text-gray-300 leading-relaxed">
+          Welcome to my portfolio! I'm a <strong className="text-white">MERN Stack Developer</strong> passionate about building intuitive, responsive, and beautiful web apps. I love combining clean code with modern design to bring ideas to life. Let’s collaborate and create something amazing!
+        </p>
+      </div>
+
+      {/* Right Image Section */}
+      <motion.div
+        className="md:w-1/2 flex justify-center"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.2 }}
+      >
+        <motion.div
+          animate={{
+            rotate: [0, 15, -15, 0],
+            scale: [1, 1.05, 1],
           }}
-
           transition={{
-            duration:5
-            , ease: "easeInOut",
-            // repeat:Infinity,
-            repeatDelay:1,
-            
-            
-            
+            duration: 4,
+            repeat: Infinity,
+            ease: 'easeInOut',
           }}
-          className='w-64 p-10 rounded-md' src='Profile.jpg' alt='' />
-          </motion.div>
-            
-          </motion.div>
+          className="relative rounded-full shadow-2xl bg-white/10 backdrop-blur-md border border-white/20"
+        >
+          <img
+            src="Profile.jpg"
+            alt="Ankesh's Profile"
+            className="w-64 sm:w-72 md:w-80 rounded-full p-4"
+          />
         </motion.div>
+      </motion.div>
+    </motion.div>
+
+
       
 
     </Container>
@@ -77,7 +78,7 @@ const Home = () => {
 
     <Contact />
    
-    <Footer />
+   
     </>
   )
 }
