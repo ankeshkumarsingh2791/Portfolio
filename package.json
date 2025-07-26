@@ -13,7 +13,7 @@
     "@formspree/react": "^2.5.1",
     "antd": "^5.21.2",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.11.1",
+    "framer-motion": "^11.18.2",
     "motion": "^12.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

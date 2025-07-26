@@ -1,58 +1,32 @@
-import React from 'react'
+import React from 'react';
 import { Carousel } from 'antd';
-import Workcard from './Workcard';
-import TestCard from './TestCard';
 import Container from './Container';
-const contentStyle = {
-  margin: 0,
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
-
+import TestCard from './TestCard';
 
 const Testinomial = () => {
-
-const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
-   
   return (
-    <>
-    <Container bgColor={"#364d79"}>
-
-     <div className='bg-[#364d79] mt-8 px-12 py-5'>
-     <h3 className='text-5xl font-bold text-white mb-2  '>Happy Clients</h3>
-        <div className='flex'>
-            <div className='bg-blue-500 w-5 h-5 rounded-full'></div> <div className='h-[2px] align-middle mt-2 w-[15%] bg-blue-500'></div>
+    <Container bgColor={'#364d79'}>
+      <div className='bg-[#364d79] mt-8 px-12 py-5 text-center'>
+        <h3 className='text-4xl sm:text-5xl font-bold text-white mb-4'>What Clients Say</h3>
+        <div className='flex justify-center mb-6'>
+          <div className='bg-blue-500 w-5 h-5 rounded-full'></div>
+          <div className='h-[2px] mt-2 w-[15%] bg-blue-500'></div>
         </div>
-     </div>
-    <Carousel className='bg-[#364d79]  p-12'  autoplay>
-        
-    <div className=' w-full  flex  gap-8'>
-        <TestCard />
-       
- 
-    </div>
-    <div>
-      
-   <TestCard />
-    </div>
-    <div>
-     <TestCard />
-    </div>
-    <div>
-     <TestCard />
-    </div>
-  </Carousel>
+        <p className='text-gray-200 max-w-2xl mx-auto text-sm sm:text-md'>
+          Hear what our satisfied clients have to say about working together. Their feedback speaks to the passion and precision we put into every project.
+        </p>
+      </div>
+
+      <Carousel autoplay dots={true} className='bg-[#364d79] px-4 pb-12'>
+        <div>
+          <TestCard />
+        </div>
+        <div>
+          <TestCard />
+        </div>
+      </Carousel>
     </Container>
+  );
+};
 
-
-
-    </>
-  )
-}
-
-export default Testinomial
+export default Testinomial;
